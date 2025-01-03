@@ -13,12 +13,18 @@
 .hero_section
 {
     background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(backgroun.jpg);
-    height:672px;
-    border:1px solid black;
+    /* height:672px; */
+    height: 95vh;
+    border-style: solid;
+    border-image: linear-gradient(to right, #141010, #C11119, #141010) 1;
     background-size:cover;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-top-width:0;
+    border-left-width:0;
+    border-right-width:0;
+    border-bottom-width: 5px;
 }
 
  /* Header: */
@@ -29,26 +35,26 @@
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    width:80%;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 10px;
+    width:83vw;
+    /* margin-left: 10vw;
+    margin-right: 10vw; */
+    margin-top: 8px;
 }
 #logo{
     height: 85px;
     width:148px;
-    margin-left: 35px;
+    /* margin-left: 35px; */
 }
 .top_right
 {
     background: none;
     display: flex;
-    margin-right: 2px;
+    /* margin-right: 2px; */
 }
 .language
 {
     height:32px;
-    width:121px;
+    width:fit-content;
     background-color: #141010;
     color: white;
     border:1px solid #5F5F5F;
@@ -56,12 +62,14 @@
     display: flex;
     align-items:center;
     justify-content: center;
+    padding-left:8px;
+    padding-right:6px ;
 }
 .select_lang
 {
     background: none;
     border:none;
-    font-size: 15px;
+    font-size: 1rem;
     outline: none;
 }
 .select_lang option {
@@ -70,22 +78,23 @@
 }
 #lang_icon
 {
-    font-size: 20px;
+    font-size: 1rem;
     margin-right: 2px;
+    margin-left: 2px;
 }
 .sign_in
 {
     border-radius: calc(0.25rem - 0.0625rem);
-    margin-left: 15px;
+    margin-left: 12px;
     margin-right: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 15px;
+    font-size: 0.9rem;
     width: 75px;
     height: 33px;
     background-color:#E50914;
-    font-weight: 300;
+    font-weight: 700;
 }
 #signin{
     text-decoration:none;
@@ -100,11 +109,8 @@
  .info
  {
     height:fit-content;
-    width:600px;
-    margin-top:90px;
-    /* margin-left:430px;
-    margin-right:300px; */
-    /* border: 2px solid black; */
+    width:50vw;
+    margin-top:18vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,20 +118,21 @@
  }
  .info h1
  {
-    font-size: 50px;
+    /* font-size: 50px; */
+    font-size: 3.2rem;
     font-weight: 1000;
  }
  .info p
  {
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top:3%;
+    font-size:1.27rem;
     font-weight: 650;
  }
  .info h3
  {
-    margin-top: 30px;
-    font-size: 16px;
-    font-weight: 550;
+    margin-top: 4.3%;
+    font-size: 0.99rem;
+    font-weight: 500;
  }
 
   /* email address input */
@@ -133,13 +140,14 @@
   {
     margin-top: 20px;
     display: flex;
-    width:600px;
+    width:40vw;
     height: 56px;
   }
   .email input
   {
     width:100%;
     font-size: 1rem;
+    border: 1px solid grey ;
     border-radius: calc(0.25rem - 0.0625rem);
     color:rgb(255,255,255,1);
     font-weight: 600;
@@ -149,10 +157,9 @@
   .button
   {
     display: flex;
-    /* height: 56px; */
     font-size: 1.5rem;
     margin-left: 10px;
-    width: 330px;
+    width: 400px;
     background-color: #E50914;
     border-radius: calc(0.25rem - 0.0625rem);
     justify-content: center;
@@ -177,12 +184,18 @@
     /* border-radius: 50px; */
   }
 
+    main
+    {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+    } 
    /* Main Content: */
    .main-content
    {
     margin-top: 0;
     height:fit-content;
-    width:100%;
+    width:83vw;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -190,16 +203,14 @@
    
    .main-content h2{
         margin-top: 35px;
-        margin-left: 110px;
-        margin-right: 100px;
    }
 
    .trending
    {
     height: fit-content;
     margin-top: 20px;
-    margin-left: 145px;
-    margin-right: 135px;
+    margin-left:30px;
+    margin-right:44.9px;
     display:flex;
     flex-wrap: wrap;
     column-gap:48px;
@@ -208,8 +219,8 @@
 
    .content
    {
-    height:220px;
-    width:160px;
+    height:30vh;
+    width:15%;
     background-color:black;
     margin-bottom:30px;
     flex-shrink: 0;
@@ -244,24 +255,23 @@
     /* More reasons to join */
     .reasons
     {
-     /* height: 1000px; */
      margin-top: 20px;
-     margin-left: 120px;
-     margin-right: 135px;
      display:flex;
      flex-direction: row;
      gap: 15px;
+     height: fit-content;
     }
     .reason
     {   
     background: linear-gradient(to bottom right,#192145,  #210E17); 
         display: flex;
         flex-direction: column;
-        width:220px;
-        height:322px;
+        width:16.5vw;
+        height:16.5vw;
         margin-bottom: 35px;
         border-radius: 5%;
         padding:15px;
+        position: relative;
     }
     .reason h3
     {
@@ -278,37 +288,11 @@
         color: #BBBBC3;
         position: static;
     }
-    .reason1 img
+    .reason img
     {
-        height: 80px;
-        width:85px;
-        margin-top: 83px;
-        /* margin-bottom:; */
-        margin-left: 140px;
-    }
-    .reason2 img
-    {
-        height: 70px;
-        width:75px;
-        margin-top: 40px;
-        /* margin-bottom:; */
-        margin-left: 150px;
-    }
-    .reason3 img
-    {
-        height: 73px;
-        width:78px;
-        margin-top: 88px;
-        /* margin-bottom:; */
-        margin-left: 145px;
-    }
-    .reason4 img
-    {
-        height: 70px;
-        width:75px;
-        margin-top: 30px;
-        /* margin-bottom:; */
-        margin-left: 150px;
+        position: absolute;
+        bottom:3%;
+        right:2%;
     }
 
      /* Footer */
@@ -318,36 +302,45 @@
         height: fit-content;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
      }
      .call
      {
-        margin-left:160px;
-        color: #BBBBC3;
-        font-size: 0.92rem;
+        margin-left: 8vw;
+        color:white;
+        font-size: 0.98rem;
      }
      .footer
      {
-        margin-top: 20px;
-        width:90%;
+        margin-top: 50px;
+        width:100vw;
         display: flex;
         margin-bottom:30px;
-        justify-content: space-evenly;
+        justify-content: center;
+        /* margin-left: 0; */
+     }
+     .lists
+     {
+        display: flex;
+        width: 89vw;
      }
      ul
      {
         display: flex;
         flex-direction: column;
+        margin-right: 9rem;
      }
      ul a
      {
         color: #BBBBC3;
-        font-size: 0.87rem;
-        font-weight: 520;
+        font-size: 0.95rem;
+        font-weight: 540;
         margin-bottom:12px;
      }
      .bottom-button
      {
-        margin-left:160px;
+        margin-left:8vw;
         margin-bottom: 30px;
      }
      .click-effect:focus-within
@@ -358,9 +351,9 @@
      .netflix
      {
         color: #BBBBC3;
-        font-size: 0.87rem;
+        font-size: 0.9rem;
         font-weight: 520;
         margin-bottom:12px;
-        margin-left:160px;
+        margin-left:8vw;
         margin-bottom: 50px;
      }
